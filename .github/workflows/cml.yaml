@@ -1,7 +1,7 @@
 name: MLOps with CML
 on: [push, pull_request]
 jobs:
-train-and-report:
+  train-and-report:
   runs-on: ubuntu-latest
   steps:
     - name: Checkout Repository
@@ -16,8 +16,8 @@ train-and-report:
         python-version: '3.11'
     - name: Configure Git
       run: |
-        git config --global user.email "TUEMAIL"
-        git config --global user.name "TUUSUARIO"
+        git config --global user.email "202213736@alu.comillas.edu"
+        git config --global user.name "javierahumada4"
     - name: Restore DVC Cache
       uses: actions/cache@v3
       with:
